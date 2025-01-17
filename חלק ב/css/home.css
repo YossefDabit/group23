@@ -1,0 +1,15 @@
+main {
+    text-align: center;
+    padding: 2rem;
+}
+
+main h1 {
+    font-size: 2.5rem;
+    color: #0d47a1;
+}
+
+main p {
+    font-size: 1.2rem;
+    margin: 10px 0;
+    color: #555555;
+}

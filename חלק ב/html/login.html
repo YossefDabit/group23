@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - YOSSI BARBERSHOP</title>
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/login.css">
+</head>
+<body>
+    <header>
+        <img src="logo.jpg" alt="YOSSI BARBERSHOP Logo">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="register.html">Register</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Login</h1>
+        <form id="loginForm">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" placeholder="Enter your password" required>
+
+            <button type="submit">Login</button>
+        </form>
+    </main>
+    <footer>
+        <p>&copy; 2025 YOSSI BARBERSHOP. All rights reserved.</p>
+    </footer>
+    <!-- כפתור לעמוד אודות -->
+    <a href="about.html" class="about-button">About Us</a>
+
+    <script>
+        document.getElementById("loginForm").addEventListener("submit", function (event) {
+            event.preventDefault(); // למנוע שליחה אוטומטית של הטופס
+
+            // שם משתמש וסיסמה דמיים
+            const dummyEmail = "user@example.com";
+            const dummyPassword = "password123";
+
+            const email = document.getElementById("email").value;
+            const password = document.getElementById("password").value;
+
+            // בדיקה אם הנתונים נכונים
+            if (email === dummyEmail && password === dummyPassword) {
+                alert("Login successful!");
+                window.location.href = "personal-area.html"; // להעביר לדף האזור האישי
+            } else {
+                alert("Invalid credentials. Please try again.");
+            }
+        });
+    </script>
+</body>
+</html>

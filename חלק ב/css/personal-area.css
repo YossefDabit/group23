@@ -1,0 +1,90 @@
+/* עיצוב כללי */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    padding: 1rem;
+    color: white;
+    text-align: center;
+}
+
+header img {
+    height: 80px;
+    width: auto;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+/* תיבת התוכן (הנבחרת לפי כפתור) */
+.content-area {
+    padding: 20px;
+    margin-top: 30px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: block; /* התוכן יופיע מיד */
+    opacity: 1;
+    transform: translateY(0);
+    width: 80%; /* רוחב גדול יותר לטובת נראות */
+    max-width: 600px; /* מקסימום רוחב תוכן */
+    min-height: 300px; /* מינימום גובה תוכן */
+    position: relative; /* מיקום יחסי למרכז העמוד */
+    left: 50%; /* ממרכז את התוכן */
+    transform: translateX(-50%); /* משנה את המיקום של התוכן למרכז */
+}
+
+/* כפתורים */
+.options button {
+    background-color: #0d47a1;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 10px;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.options button:hover {
+    background-color: #094080;
+}
+
+/* עיצוב טופס זימון תור */
+#appointmentForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#appointmentForm label, #appointmentForm select, #appointmentForm input {
+    width: 100%; /* משנה את רוחב השדות למלא את התוכן */
+    padding: 10px;
+    margin: 5px 0; /* מרווחים סביב השדות */
+    box-sizing: border-box; /* מאפשר ניהול טוב יותר של רוחב השדות */
+}
+
+#appointmentForm button {
+    width: auto;
+    padding: 10px 20px;
+    margin-top: 20px; /* מרווח מעל הכפתור */
+}
