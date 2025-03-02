@@ -1,0 +1,47 @@
+main h1, main p, main h2 {
+    text-align: center; /* Centers the text of headings and paragraphs */
+}
+
+.barber-profiles {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.barber {
+    position: relative;
+    width: 250px; /* Adjust size as needed */
+    text-align: center; /* Centers text within each barber profile */
+}
+
+.barber img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.5s ease;
+    border-radius: 10px;
+}
+
+.barber:hover img {
+    transform: scale(1.05); /* Slight zoom on hover */
+}
+
+.description {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent overlay */
+    color: white;
+    text-align: center;
+    padding: 10px;
+    opacity: 0;
+    transition: opacity 0.5s ease, transform 0.5s ease;
+    transform: translateY(100%);
+    border-radius: 0 0 10px 10px;
+}
+
+.barber:hover .description {
+    opacity: 1;
+    transform: translateY(0);
+}

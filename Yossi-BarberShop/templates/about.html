@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - YOSSI BARBERSHOP</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/global.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/about.css') }}">
+</head>
+<body>
+    <header>
+        <img src="{{ url_for('static', filename='images/logo.jpg') }}" alt="YOSSI BARBERSHOP Logo">
+        <nav>
+            <ul>
+                <li><a href="{{ url_for('home') }}">Home</a></li>
+                <li><a href="{{ url_for('register_page') }}">Register</a></li>
+                <li><a href="{{ url_for('login_page') }}">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>About YOSSI BARBERSHOP</h1>
+        <p>Welcome to YOSSI BARBERSHOP, the ultimate destination for professional and personalized haircare services. At our shop, you'll find a team of dedicated professionals ready to meet your hair and beard grooming needs, ensuring every client leaves looking their best.</p>
+        <p>Our barbershop brings together the best barbers in the industry: Yossi, Daniel, Aviv, and Tamar, each specializing in unique styles to meet your needs. We pride ourselves on our commitment to quality, customer service, and a welcoming environment.</p>
+        <h2>Operating Hours</h2>
+        <p>We are open Sunday to Friday from 10:00 AM to 5:00 PM. Come visit us during these hours for top-tier haircuts and beard grooming services.</p>
+
+        <div class="barber-profiles">
+            <div class="barber">
+                <img src="{{ url_for('static', filename='images/yossi.jpg') }}" alt="Yossi">
+                <div class="description">Hi, I'm Yossi, expert in classic cuts and beard styling.</div>
+            </div>
+            <div class="barber">
+                <img src="{{ url_for('static', filename='images/daniel.jpg') }}" alt="Daniel">
+                <div class="description">Hi, I'm Daniel, specializing in modern hairstyles and detailed trims.</div>
+            </div>
+            <div class="barber">
+                <img src="{{ url_for('static', filename='images/aviv.jpg') }}" alt="Aviv">
+                <div class="description">Hi, I'm Aviv, known for creative styles and vibrant colors.</div>
+            </div>
+            <div class="barber">
+                <img src="{{ url_for('static', filename='images/tamar.jpg') }}" alt="Tamar">
+                <div class="description">Hi, I'm Tamar, renowned for meticulous attention to detail and precision.</div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2025 YOSSI BARBERSHOP. All rights reserved.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Area - YOSSI BARBERSHOP</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/global.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/personal-area.css') }}">
+</head>
+<body>
+    <header>
+        <img src="{{ url_for('static', filename='images/logo.jpg') }}" alt="YOSSI BARBERSHOP Logo">
+        <nav>
+            <ul>
+                <li><a href="{{ url_for('home') }}">Home</a></li>
+                <li><a href="#" id="logoutBtn">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Welcome to Your Personal Area</h1>
+        <div class="options">
+            <button id="appointmentBtn">Book Appointment</button>
+            <button id="historyBtn">View Haircut History</button>
+            <button id="manageBtn">Manage Appointments</button>
+        </div>
+
+        <!-- This will show based on the option chosen -->
+        <div id="contentArea" class="content-area">
+            <!-- Content will change dynamically via JS -->
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 YOSSI BARBERSHOP. All rights reserved.</p>
+    </footer>
+
+    <script src="{{ url_for('static', filename='js/personal-area.js') }}"></script>
+</body>
+</html>
